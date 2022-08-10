@@ -98,6 +98,7 @@ section {
 
   .upper-row {
     position: relative;
+    margin: 1em 0 5em;
 
     p {
       color: $secondaryTextColor;
@@ -122,8 +123,7 @@ section {
     }
 
     .left-column {
-      margin: 4em 0;
-
+      //   margin: 7em 0 4em;
       h2 {
         color: $secondaryTextColor;
         font-weight: 700;
@@ -136,7 +136,7 @@ section {
       }
     }
     .right-column {
-      margin: 4em 0;
+      //   margin: 7em 0 4em;
       position: relative;
       p {
         color: $darkPrimaryColor;
@@ -489,6 +489,11 @@ footer {
       }
     }
   }
+
+  .left-column,
+  .right-column {
+    margin-top: 7em;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -502,5 +507,19 @@ footer {
 
   .app-description {
     padding: 0 50px;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(0px, 19px);
+    z-index: 3;
+  }
+  to {
+    transform: translate(0px, 0px);
   }
 }

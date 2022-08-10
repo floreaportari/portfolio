@@ -117,6 +117,7 @@ section {
 
 #experience .upper-row {
   position: relative;
+  margin: 1em 0 5em;
 }
 
 #experience .upper-row p {
@@ -141,10 +142,6 @@ section {
   z-index: -1;
 }
 
-#experience .upper-row .left-column {
-  margin: 4em 0;
-}
-
 #experience .upper-row .left-column h2 {
   color: #17252a;
   font-weight: 700;
@@ -157,7 +154,6 @@ section {
 }
 
 #experience .upper-row .right-column {
-  margin: 4em 0;
   position: relative;
 }
 
@@ -504,6 +500,10 @@ footer .footer-img {
   .social-links ul img {
     width: 30px;
   }
+  .left-column,
+  .right-column {
+    margin-top: 7em;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -515,6 +515,34 @@ footer .footer-img {
   }
   .app-description {
     padding: 0 50px;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(0px, 19px);
+            transform: translate(0px, 19px);
+    z-index: 3;
+  }
+  to {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(0px, 19px);
+            transform: translate(0px, 19px);
+    z-index: 3;
+  }
+  to {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
 }
 /*# sourceMappingURL=styles.css.map */
