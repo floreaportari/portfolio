@@ -13,6 +13,15 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- CSS Links -->
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
@@ -23,13 +32,15 @@
         <nav>
           <ul>
             <li>
-              <a href="#">My experience</a>
+              <a href="#experience"
+                ><span class="slash-span">\</span>My experience</a
+              >
             </li>
             <li>
-              <a href="#">My work</a>
+              <a href="#work"><span class="slash-span">\</span>My work</a>
             </li>
             <li>
-              <a href="#">Contact me</a>
+              <a href="#contact"><span class="slash-span">\</span>Contact me</a>
             </li>
           </ul>
         </nav>
@@ -37,18 +48,21 @@
       <div class="social-links">
         <ul>
           <li>
-            <a href="#"
+            <a
+              href="https://www.linkedin.com/in/florea-portari-49136915a/"
+              target="_blank"
               ><img src="/images/linkedin-brands.svg" alt="linkedin"
             /></a>
           </li>
           <li>
-            <a href="#"><img src="/images/at-solid.svg" alt="at-sign" /></a>
+            <a href="mailto: floryanportar@gmail.com"
+              ><img src="/images/at-solid.svg" alt="at-sign"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="/images/github-brands.svg" alt="github" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/images/phone-solid.svg" alt="phone" /></a>
+            <a href="https://github.com/floreaportari" target="_blank"
+              ><img src="/images/github-brands.svg" alt="github"
+            /></a>
           </li>
         </ul>
       </div>
@@ -56,15 +70,18 @@
     <div class="hero">
       <div class="content">
         <h1>
-          Hi, I am <span class="hero-name">Florea</span>. <br />A novice
-          front-end <br />developer.
+          Hi, I am <span class="hero-name">Florea</span>.<br />A novice
+          frontend<br />developer.
         </h1>
         <div class="hero-description">
-          <p>
-            <img src="/images/angles-down-solid 1.svg" alt="" /> A begginner in
-            front-end development.
-          </p>
-          <svg width="32" height="54" viewBox="0 0 32 54" fill="none">
+          <p>A beginner in front-end development.</p>
+          <svg
+            class="scroll-icon"
+            width="32"
+            height="54"
+            viewBox="0 0 32 54"
+            fill="none"
+          >
             <rect
               x="2.5"
               y="2.5"
@@ -158,10 +175,14 @@
     </div>
 
     <main>
-      <section class="experience">
+      <section id="experience">
         <div class="upper-row">
+          <img
+            class="upper-ellipse"
+            src="/images/Ellipse 13.svg"
+            alt="ellipse-img"
+          />
           <div class="left-column">
-            <img src="/images/Ellipse 13.svg" alt="" />
             <h2>My Experience</h2>
             <p>
               I have been working in the IT Support field for the past 5 years.
@@ -170,93 +191,134 @@
               skills and absolutely eager to gain new ones.
             </p>
           </div>
+          <img
+            class="right-rect"
+            src="/images/Rectangle 6.svg"
+            alt="rectangle-img"
+          />
           <div class="right-column">
-            <p>My CV for detailed experience</p>
-            <img src="/images/Rectangle 6.svg" alt="" />
+            <p>See my CV for detailed experience</p>
+            <a href="/images/CV_Florea Portari.pdf"
+              ><i class="fa-solid fa-scroll cv-icon"></i
+            ></a>
           </div>
+        </div>
+        <div class="middle-row">
+          <h2>Technologies I have experience with</h2>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3"></i>
+          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-sass"></i>
+          <i class="fa-solid fa-terminal"></i>
+          <i class="fa-brands fa-bootstrap"></i>
+          <i class="fa-brands fa-git"></i>
+          <i class="fa-brands fa-node"></i>
         </div>
         <div class="lower-row">
           <div class="lower-row-container">
-            <p>IT Service Desk Analyst at Diebold Nixdorf</p>
+            <p class="job-descr">
+              IT Service Desk Analyst at
+              <span class="company-name">Diebold Nixdorf</span>
+            </p>
             <img src="/images/diebold.jpeg" alt="" />
-            <p>Jul 2017 - Aug 2018</p>
+            <p class="years-worked">Jul 2017 - Aug 2018</p>
           </div>
           <div class="lower-row-container">
-            <p>IT Support Engineer/Trainer at Nordea Bank</p>
+            <p class="job-descr">
+              IT Support Engineer/Trainer at
+              <span class="company-name">Nordea Bank</span>
+            </p>
             <img src="/images/nordea.jpeg" alt="" />
-            <p>Sep 2018 - Jun 2020</p>
+            <p class="years-worked">Sep 2018 - Jun 2020</p>
           </div>
           <div class="lower-row-container">
-            <p>IT Onsite Support Engineer at Alcon Polskaf</p>
+            <p class="job-descr">
+              IT Onsite Support Engineer at
+              <span class="company-name">Alcon Polska</span>
+            </p>
             <img src="/images/alcon.jpeg" alt="" />
-            <p>Feb 2021 - Mar 2022</p>
+            <p class="years-worked">Feb 2021 - Mar 2022</p>
           </div>
         </div>
-        <img src="images/Ellipse 17.png" alt="" />
+        <!-- <img src="images/Ellipse 17.png" alt="" /> -->
       </section>
-      <section class="work">
-        <h2>My Work</h2>
-        <img src="/images/mywork-images.svg" alt="" />
+      <section id="work">
+        <div class="work-image">
+          <h2>My Work</h2>
+          <img src="/images/mywork-images.svg" alt="" />
+        </div>
         <div class="my-work-apps">
           <div class="app-container">
             <div class="app-description">
               <h4>ToDoApp</h4>
-              <p>A very simple ToDo App where you can add your tasks.</p>
-              <a href="#">floreaportari.github.io/todoapp/</a>
+              <p>
+                A very simple ToDo App where you can add your tasks. You can add
+                new tasks, delete unnecessary and mark them as completed. HTML,
+                CSS and JS was used to build it. For code you can visit my
+                GitHub account.
+              </p>
             </div>
-            <img src="images/todo.png" alt="todo-app" />
+            <a href="https://floreaportari.github.io/todoapp/"
+              ><img src="images/todo.png" alt="todo-app"
+            /></a>
           </div>
           <div class="app-container">
             <div class="app-description">
               <h4>Bakery Website</h4>
-              <p>A very simple Bakery Website.</p>
-              <a href="#">floreaportari.github.io/bakery/</a>
+              <p>
+                A super simple Bakery Website. Designed and built in a very
+                light manner. HTML and CSS was used to build this website. For
+                code you can visit my GitHub account.
+              </p>
             </div>
-            <img src="images/bakery_website.png" alt="bakery-website" />
+            <a href="https://floreaportari.github.io/bakery/"
+              ><img src="images/bakery_website.png" alt="bakery-website"
+            /></a>
           </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="contact">
       <div class="left-footer-container">
         <h2>Contact me</h2>
-        <div class="footer-social-links">
-          <ul>
-            <li>
-              <a href="#"
-                ><img src="/images/linkedin-brands.svg" alt="linkedin"
-              /></a>
-            </li>
-            <li>
-              <a href="#"><img src="/images/at-solid.svg" alt="at-sign" /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="/images/github-brands.svg" alt="github"
-              /></a>
-            </li>
-            <li>
-              <a href="#"><img src="/images/phone-solid.svg" alt="phone" /></a>
-            </li>
-          </ul>
+        <div class="social-nav-container">
+          <div class="footer-social-links">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="/images/linkedin-brands.svg" alt="linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/images/at-solid.svg" alt="at-sign" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="/images/github-brands.svg" alt="github"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="middle-footer-container">
+            <div class="footer-nav-links">
+              <ul>
+                <li>
+                  <a href="#experience">\My experience</a>
+                </li>
+                <li>
+                  <a href="#work">\My work</a>
+                </li>
+                <li>
+                  <a href="#contact">\Contact me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="middle-footer-container">
-        <div class="footer-nav-links">
-          <ul>
-            <li>
-              <a href="#">My experience</a>
-            </li>
-            <li>
-              <a href="#">My work</a>
-            </li>
-            <li>
-              <a href="#">Contact me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <img src="/images/footer-img.svg" alt="footer-img" />
+
+      <img class="footer-img" src="/images/footer-img.svg" alt="footer-img" />
     </footer>
     <script src="app.js"></script>
   </body>
