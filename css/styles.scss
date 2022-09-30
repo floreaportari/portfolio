@@ -15,7 +15,7 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 $primaryTextColor: #f3ffff;
@@ -207,6 +207,7 @@ section {
     font-weight: 700;
     letter-spacing: $letterSpacing;
     padding-top: 0.5em;
+    font-size: 26px;
   }
 
   img {
